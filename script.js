@@ -19,3 +19,6 @@ function getHumanChoice() {
     return humanChoice;
 }
 
+// Initial score of human and computer
+let humanScore = 0, computerScore = 0;
+
