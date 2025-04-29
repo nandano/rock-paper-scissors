@@ -1,3 +1,4 @@
+// Function to generate a random choice (computer's choice)
 function getComputerChoice() {
     const computerChoiceNumber = Math.floor(Math.random() * 3) + 1;
     let computerChoice;
@@ -9,5 +10,12 @@ function getComputerChoice() {
         computerChoice = 'scissors';
     }
     return computerChoice;
+}
+
+// Function to get the human's choice
+function getHumanChoice() {
+    const humanChoice = prompt("Enter 'rock', 'paper' or 'scissors'");
+
+    return humanChoice;
 }
 
