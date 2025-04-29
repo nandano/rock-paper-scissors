@@ -22,3 +22,24 @@ function getHumanChoice() {
 // Initial score of human and computer
 let humanScore = 0, computerScore = 0;
 
+function playRound(humanChoice, computerChoice) {
+    humanChoice = humanChoice.toLowerCase();
+    computerChoice = computerChoice.toLowerCase();
+
+    if (humanChoice === 'rock' && computerChoice === 'scissors') {
+        console.log("You win! Rock beats scissors");
+        humanScore++;
+    } else if (humanChoice === 'paper' && computerChoice === 'rock') {
+        console.log("You win! Paper beats Rock");
+        humanScore++;
+    } else if (humanChoice === 'scissors' && computerChoice === 'paper') {
+        console.log("You win! Scissors beat Paper");
+        humanScore++;
+    } else if (humanChoice === computerChoice) {
+        console.log("It's a tie");
+    } else {
+        console.log("You lose!");
+        computerScore++;
+    }
+}
+
